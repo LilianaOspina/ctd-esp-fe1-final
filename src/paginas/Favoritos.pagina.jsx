@@ -1,4 +1,4 @@
-import GrillaPersonajes from "../componentes/personajes/grilla-personajes.componente";
+import GrillaPersonajes from "../componentes/personajes/grilla-personajes.componente.tsx";
 
 /**
  * Esta es la pagina de favoritos. Aquí se deberan ver todos los personajes marcados como favoritos
