@@ -1,4 +1,6 @@
-interface PersonajeType {
+import FavoritosType from "./favoritos.types";
+
+interface PersonajeType extends FavoritosType{
     id: number;
     name: string;
     status: string;

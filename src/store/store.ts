@@ -4,11 +4,13 @@ import { TypedUseSelectorHook, useSelector as useReduxSelector } from "react-red
 import { composeWithDevTools } from "@redux-devtools/extension";
 import thunk from "redux-thunk";
 import personajesReducer from "../reducers/personajes.reducer";
+import favoritosReducer from "../reducers/favoritos.reducer";
 
 
 const rootReducer = combineReducers({
     // Aqui van los reducers.
     personajes: personajesReducer,
+    favoritos: favoritosReducer
 });
 
 export type IRootState = ReturnType<typeof rootReducer>;
