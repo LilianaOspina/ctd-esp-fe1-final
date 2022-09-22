@@ -10,7 +10,7 @@ import { buscarPersonajeThunk } from '../../thunks/thunks';
  * Al montarse el componente se mostrara un listado de los personajes y se renderizaran segun las busquedas realizadas en el filtro
  * 
  * 
- * @returns un JSX element 
+ * @returns {React.ReactElement} un JSX element 
  */
 const GrillaPersonajes:FC = () => {
     
