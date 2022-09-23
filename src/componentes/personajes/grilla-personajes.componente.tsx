@@ -14,6 +14,7 @@ const mapDispatch = {
 
 const connector = connect(mapState, mapDispatch);
 type GrillaPersonajesProps = ConnectedProps<typeof connector>;
+
 /**
  * Grilla de personajes para la pagina de inicio
  * Al montarse el componente se mostrara un listado de los personajes y se renderizaran segun las busquedas realizadas en el filtro

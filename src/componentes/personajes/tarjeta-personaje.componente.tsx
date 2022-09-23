@@ -14,7 +14,7 @@ type TarjetaPersonajeProps = {
  * 
  * @param {PersonajeType} personaje
  * @param {function(*)} onClickFavorito
- * @returns {React.ReactElement }un JSX element 
+ * @returns {React.ReactElement } un JSX element 
  */
 
 const TarjetaPersonaje = ({personaje, onClickFavorito }: TarjetaPersonajeProps) => {

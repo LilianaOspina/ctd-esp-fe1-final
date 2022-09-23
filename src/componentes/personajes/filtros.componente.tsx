@@ -1,5 +1,6 @@
 import React, { ChangeEvent, FC } from 'react';
 import { useDispatch } from 'react-redux';
+import { useSelector } from '../../store/store';
 import { buscarPersonajeThunk } from '../../thunks/thunks';
 import './filtros.css';
 
@@ -9,10 +10,11 @@ import './filtros.css';
  * @returns {React.ReactElement} un JSX element
  */
 
-
 const Filtros: FC = () => {
     
     const dispatch = useDispatch();
+
+    const { search } = useSelector(state => state.personajes)
 
     const searchPersonaje = async (e: ChangeEvent<HTMLInputElement>) => {
         //Hacemos el dispatch del thunk
@@ -23,6 +25,7 @@ const Filtros: FC = () => {
         <label htmlFor="nombre">Filtrar por nombre:</label>
         <input
             type="text"
+            value={search}
             placeholder="Rick, Morty, Beth, Alien, ...etc" name="nombre"
             onChange={(e)=>{searchPersonaje(e)}}
         />

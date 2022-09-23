@@ -1,13 +1,14 @@
 // import FavoritosType from '../../types/favoritos.types';
+import React from 'react';
 import PersonajeType from '../../types/personajes.types';
 import './boton-favorito.css';
 /**
  * Boton que indica si un elemento es favorito o no, y da la posibilidad de marcarlo/desmarcarlo
  * 
- * Deberás tipar las propiedades si usas este componente
- * 
- * 
- * @returns un JSX element 
+ * @param {PersonajeType} personaje
+ * @param {boolean} esFavorito
+ * @param {function(*)} onClickFavorito
+ * @returns {React.ReactElement}un JSX element 
  */
 
 type Props = {
